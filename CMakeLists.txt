@@ -136,7 +136,12 @@ set(dobby.SOURCE_FILE_LIST ${dobby.SOURCE_FILE_LIST}
   source/TrampolineBridge/Trampoline/trampoline_arm64.cc
   source/TrampolineBridge/Trampoline/trampoline_x86.cc
   source/TrampolineBridge/Trampoline/trampoline_x64.cc
-
+  
+  # intercept routing plugin (buildin)
+  source/InterceptRouting/Routing/FunctionInlineReplace/function-inline-replace.cc
+  source/InterceptRouting/Routing/FunctionInlineReplace/FunctionInlineReplaceExport.cc
+  source/InterceptRouting/Routing/StaticInlineHook/static-inline-hook.cc
+  
   # closure trampoline bridge - arm
   source/TrampolineBridge/ClosureTrampolineBridge/arm/helper_arm.cc
   source/TrampolineBridge/ClosureTrampolineBridge/arm/closure_bridge_arm.cc
