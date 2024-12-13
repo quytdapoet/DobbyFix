@@ -1,5 +1,5 @@
 import os
-import pipes
+import shlex
 import re
 import shutil
 import subprocess
